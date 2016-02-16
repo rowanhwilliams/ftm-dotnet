@@ -1,0 +1,58 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 14
+VisualStudioVersion = 14.0.23107.0
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "src", "src", "{7DA1B80E-5978-4523-9023-344070906F97}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{73D4D1A4-2D62-46FC-AC41-F010E78C23EF}"
+	ProjectSection(SolutionItems) = preProject
+		global.json = global.json
+	EndProjectSection
+EndProject
+Project("{8BB2217D-0F2D-49D1-97BC-3654ED321F3B}") = "Fintechmonitor.Web", "src\Fintechmonitor.Web\Fintechmonitor.Web.xproj", "{DFBBE769-0D9F-4FAF-99D2-649804E42243}"
+	ProjectSection(ProjectDependencies) = postProject
+		{5611E5B2-37BA-4DC1-9B9C-999B361E7D96} = {5611E5B2-37BA-4DC1-9B9C-999B361E7D96}
+		{C8F990CB-2C52-47D7-B1C1-519941594944} = {C8F990CB-2C52-47D7-B1C1-519941594944}
+		{068233CD-2DF4-4046-B32F-96A184644E59} = {068233CD-2DF4-4046-B32F-96A184644E59}
+	EndProjectSection
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Fintechmonitor.Services", "Fintechmonitor.Services\Fintechmonitor.Services.csproj", "{C8F990CB-2C52-47D7-B1C1-519941594944}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Fintechmonitor.Domain", "Fintechmonitor.Domain\Fintechmonitor.Domain.csproj", "{068233CD-2DF4-4046-B32F-96A184644E59}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Fintechmonitor.Repository", "Fintechmonitor.Repository\Fintechmonitor.Repository.csproj", "{5611E5B2-37BA-4DC1-9B9C-999B361E7D96}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{DFBBE769-0D9F-4FAF-99D2-649804E42243}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{DFBBE769-0D9F-4FAF-99D2-649804E42243}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{DFBBE769-0D9F-4FAF-99D2-649804E42243}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{DFBBE769-0D9F-4FAF-99D2-649804E42243}.Release|Any CPU.Build.0 = Release|Any CPU
+		{C8F990CB-2C52-47D7-B1C1-519941594944}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C8F990CB-2C52-47D7-B1C1-519941594944}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C8F990CB-2C52-47D7-B1C1-519941594944}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C8F990CB-2C52-47D7-B1C1-519941594944}.Release|Any CPU.Build.0 = Release|Any CPU
+		{068233CD-2DF4-4046-B32F-96A184644E59}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{068233CD-2DF4-4046-B32F-96A184644E59}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{068233CD-2DF4-4046-B32F-96A184644E59}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{068233CD-2DF4-4046-B32F-96A184644E59}.Release|Any CPU.Build.0 = Release|Any CPU
+		{5611E5B2-37BA-4DC1-9B9C-999B361E7D96}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{5611E5B2-37BA-4DC1-9B9C-999B361E7D96}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{5611E5B2-37BA-4DC1-9B9C-999B361E7D96}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{5611E5B2-37BA-4DC1-9B9C-999B361E7D96}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{DFBBE769-0D9F-4FAF-99D2-649804E42243} = {7DA1B80E-5978-4523-9023-344070906F97}
+		{C8F990CB-2C52-47D7-B1C1-519941594944} = {7DA1B80E-5978-4523-9023-344070906F97}
+		{068233CD-2DF4-4046-B32F-96A184644E59} = {7DA1B80E-5978-4523-9023-344070906F97}
+		{5611E5B2-37BA-4DC1-9B9C-999B361E7D96} = {7DA1B80E-5978-4523-9023-344070906F97}
+	EndGlobalSection
+EndGlobal
