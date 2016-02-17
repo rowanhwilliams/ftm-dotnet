@@ -1,0 +1,57 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 14
+VisualStudioVersion = 14.0.24720.0
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Fintechmonitor.Web", "Fintechmonitor.Web\Fintechmonitor.Web.csproj", "{A5EF0BA4-E7C1-49A4-94F7-0A566713166E}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Fintechmonitor.Domain", "Fintechmonitor.Domain\Fintechmonitor.Domain.csproj", "{068233CD-2DF4-4046-B32F-96A184644E59}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Fintechmonitor.Repository", "Fintechmonitor.Repository\Fintechmonitor.Repository.csproj", "{5611E5B2-37BA-4DC1-9B9C-999B361E7D96}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Fintechmonitor.Services", "Fintechmonitor.Services\Fintechmonitor.Services.csproj", "{C8F990CB-2C52-47D7-B1C1-519941594944}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "PublishScripts", "PublishScripts", "{35026554-AC86-4A62-B229-ACCE098E9700}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Scripts", "Scripts", "{9A2EA556-8A0A-460F-BD3C-FA2AF2850AA8}"
+	ProjectSection(SolutionItems) = preProject
+		PublishScripts\Scripts\Deploy-AzureResourceGroup.ps1 = PublishScripts\Scripts\Deploy-AzureResourceGroup.ps1
+	EndProjectSection
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Templates", "Templates", "{212097C2-CE19-4C02-9E4E-81BEC60BEEC7}"
+	ProjectSection(SolutionItems) = preProject
+		PublishScripts\Templates\FintechmonitorWeb.json = PublishScripts\Templates\FintechmonitorWeb.json
+		PublishScripts\Templates\FintechmonitorWeb.param.dev.json = PublishScripts\Templates\FintechmonitorWeb.param.dev.json
+	EndProjectSection
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{A5EF0BA4-E7C1-49A4-94F7-0A566713166E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A5EF0BA4-E7C1-49A4-94F7-0A566713166E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A5EF0BA4-E7C1-49A4-94F7-0A566713166E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A5EF0BA4-E7C1-49A4-94F7-0A566713166E}.Release|Any CPU.Build.0 = Release|Any CPU
+		{068233CD-2DF4-4046-B32F-96A184644E59}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{068233CD-2DF4-4046-B32F-96A184644E59}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{068233CD-2DF4-4046-B32F-96A184644E59}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{068233CD-2DF4-4046-B32F-96A184644E59}.Release|Any CPU.Build.0 = Release|Any CPU
+		{5611E5B2-37BA-4DC1-9B9C-999B361E7D96}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{5611E5B2-37BA-4DC1-9B9C-999B361E7D96}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{5611E5B2-37BA-4DC1-9B9C-999B361E7D96}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{5611E5B2-37BA-4DC1-9B9C-999B361E7D96}.Release|Any CPU.Build.0 = Release|Any CPU
+		{C8F990CB-2C52-47D7-B1C1-519941594944}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C8F990CB-2C52-47D7-B1C1-519941594944}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C8F990CB-2C52-47D7-B1C1-519941594944}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C8F990CB-2C52-47D7-B1C1-519941594944}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{9A2EA556-8A0A-460F-BD3C-FA2AF2850AA8} = {35026554-AC86-4A62-B229-ACCE098E9700}
+		{212097C2-CE19-4C02-9E4E-81BEC60BEEC7} = {35026554-AC86-4A62-B229-ACCE098E9700}
+	EndGlobalSection
+EndGlobal
