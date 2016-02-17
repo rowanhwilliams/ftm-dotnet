@@ -3,7 +3,9 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Web;
 using System.Web.Mvc;
+using Fintechmonitor.Domain;
 using Fintechmonitor.Services;
+using Fintechmonitor.Web.Models;
 
 namespace Fintechmonitor.Web.Controllers
 {
@@ -21,11 +23,21 @@ namespace Fintechmonitor.Web.Controllers
             return View();
         }
 
-        public ActionResult About()
+        public ActionResult About(int companyId)
         {
-            ViewBag.Message = "Your application description page.";
+            var company = _companyService.Company(companyId);
 
-            return View();
+            return View(ToCompanyViewModel(company));
+        }
+
+        private CompanyViewModel ToCompanyViewModel(Company company)
+        {
+            return new CompanyViewModel
+            {
+                Id = company.Id,
+                Name = company.Name,
+                AboutUs = company.AboutUs
+            };
         }
 
         public ActionResult Contact()

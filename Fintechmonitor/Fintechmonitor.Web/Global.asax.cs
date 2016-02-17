@@ -6,6 +6,9 @@ using Autofac.Integration.Mvc;
 using System.Reflection;
 using Fintechmonitor.Services;
 using Fintechmonitor.Repository;
+using System.Data;
+using System.Configuration;
+using Fintechmonitor.Repository.Mapping;
 
 namespace Fintechmonitor.Web
 {
@@ -17,6 +20,11 @@ namespace Fintechmonitor.Web
             FilterConfig.RegisterGlobalFilters(GlobalFilters.Filters);
             RouteConfig.RegisterRoutes(RouteTable.Routes);
             BundleConfig.RegisterBundles(BundleTable.Bundles);
+
+            var dapperBootstrapper = new DapperBootstrapper();
+            dapperBootstrapper.Run();
+
+            BootstrapAutofac();
         }
 
         private void BootstrapAutofac()
@@ -48,6 +56,9 @@ namespace Fintechmonitor.Web
 
         private void SetupRegistrations(ContainerBuilder builder)
         {
+            var connectionString = ConfigurationManager.ConnectionStrings["ftmdb"].ConnectionString;
+            builder.Register(c => new MySql.Data.MySqlClient.MySqlConnection(connectionString)).As<IDbConnection>().InstancePerRequest();
+
             builder.RegisterType<CompanyService>().AsImplementedInterfaces();
             builder.RegisterType<CompanyRepository>().AsImplementedInterfaces();
         }

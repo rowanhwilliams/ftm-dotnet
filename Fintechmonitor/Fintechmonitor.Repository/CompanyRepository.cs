@@ -23,7 +23,7 @@ namespace Fintechmonitor.Repository
 
         public Company GetById(int companyId)
         {
-            var query = string.Format(GetByIdTemplate, IdColumnName);
+            var query = string.Format(GetByIdTemplate, TableName, IdColumnName);
             return _dbConnection.Query<Company>(query, new { id = companyId }).Single();
         }
     }
