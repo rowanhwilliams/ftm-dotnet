@@ -23,7 +23,7 @@ namespace Fintechmonitor.Web.Controllers
             return View();
         }
 
-        [OutputCache(Duration=30, VaryByParam = "id"]
+        [OutputCache(Duration=30, VaryByParam = "id")]
         public ActionResult About(int id)
         {
             var company = _companyService.Company(id);
