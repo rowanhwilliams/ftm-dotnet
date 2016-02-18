@@ -9,11 +9,12 @@ namespace Fintechmonitor.Repository
     {
         private readonly IDbConnection _dbConnection;
         private const string GetByIdTemplate = 
-            @"select c.*, a.City
+            @"select c.* from {0} as c where c.{1} = @id";
+            /*@"select c.*, a.City
             from {0} as c 
             inner join Headerquarters_Information as map on c.headquarters_Address = map.id_Headquarters_Information 
             inner join Addresses as a on map.AddressId = a.AddressId
-            where c.{1} = @id";
+            where c.{1} = @id";*/
         private const string TableName = "Company";
         private const string IdColumnName = "id_Company";
 
