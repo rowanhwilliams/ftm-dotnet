@@ -23,9 +23,9 @@ namespace Fintechmonitor.Web.Controllers
             return View();
         }
 
-        public ActionResult About(int companyId)
+        public ActionResult About(int id)
         {
-            var company = _companyService.Company(companyId);
+            var company = _companyService.Company(id);
 
             return View(ToCompanyViewModel(company));
         }
