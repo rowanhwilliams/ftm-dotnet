@@ -13,7 +13,7 @@ namespace Fintechmonitor.Repository
             from {0} as c 
             inner join Headquarters_Information as map on c.headquarters_Address = map.id_Headquarters_Information 
             inner join Addresses as a on map.AddressId = a.AddressId
-            where c.{1} = @id";*/
+            where c.{1} = @id";
         private const string TableName = "Company";
         private const string IdColumnName = "id_Company";
 
