@@ -36,6 +36,7 @@ namespace Fintechmonitor.Web.Controllers
             {
                 Id = company.Id,
                 Name = company.Name,
+                City = company.City,
                 AboutUs = company.AboutUs
             };
         }
