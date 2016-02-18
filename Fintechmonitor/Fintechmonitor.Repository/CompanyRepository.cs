@@ -8,7 +8,12 @@ namespace Fintechmonitor.Repository
     public class CompanyRepository : ICompanyRepository
     {
         private readonly IDbConnection _dbConnection;
-        private const string GetByIdTemplate = "select * from {0} where {1} = @id";
+        private const string GetByIdTemplate = 
+            @"select c.*, a.City
+            from {0} as c 
+            inner join Headerquarters_Information as map on c.headquarters_Address = map.id_Headquarters_Information 
+            inner join Addresses as a on map.AddressId = a.AddressId
+            where c.{1} = @id";
         private const string TableName = "Company";
         private const string IdColumnName = "id_Company";
 
