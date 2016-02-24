@@ -11,5 +11,10 @@ namespace Fintechmonitor.Web.Models
         public string Name { get; set; }
         public string City { get; set; }
         public string AboutUs { get; set; }
+
+        public static CompanyViewModel Empty()
+        {
+            return new CompanyViewModel();
+        }
     }
 }

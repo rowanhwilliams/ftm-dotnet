@@ -1,9 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-using Fintechmonitor.Domain;
+﻿using Fintechmonitor.Domain;
 using Fintechmonitor.Repository;
 
 namespace Fintechmonitor.Services
@@ -15,6 +10,11 @@ namespace Fintechmonitor.Services
         public CompanyService(ICompanyRepository companyRepository)
         {
             _companyRepository = companyRepository;
+        }
+
+        public Company[] Companies(int offset, int pageSize)
+        {
+            return _companyRepository.GetPaged(offset, pageSize);
         }
 
         public Company Company(int companyId)

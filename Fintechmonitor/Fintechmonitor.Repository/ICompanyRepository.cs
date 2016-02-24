@@ -10,5 +10,6 @@ namespace Fintechmonitor.Repository
     public interface ICompanyRepository
     {
         Company GetById(int companyId);
+        Company[] GetPaged(int offset, int pageSize);
     }
 }

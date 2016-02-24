@@ -1,0 +1,12 @@
+﻿@model Fintechmonitor.Web.Models.CompaniesListViewModel
+@{
+    ViewBag.Title = "Index";
+}
+
+<h2>Companies</h2>
+
+@foreach(var company in Model.List)
+{
+    <p>@Html.ActionLink(company.Name, "View", new { id = company.Id })</p>
+}
+

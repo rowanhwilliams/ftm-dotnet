@@ -11,5 +11,6 @@ namespace Fintechmonitor.Services
     public interface ICompanyService
     {
         Company Company(int companyId);
+        Company[] Companies(int offset, int pageSize);
     }
 }
