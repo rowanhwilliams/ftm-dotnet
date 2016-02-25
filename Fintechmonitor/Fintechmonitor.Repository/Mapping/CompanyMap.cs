@@ -14,8 +14,9 @@ namespace Fintechmonitor.Repository.Mapping
         {
             Map(p => p.Id).ToColumn("id_Company");
             Map(p => p.Name).ToColumn("Company_Full_Name");
-            Map(p => p.City).ToColumn("City");
             Map(p => p.AboutUs).ToColumn("Company_About_Us");
+            Map(p => p.City).ToColumn("City");
+            Map(p => p.Country).ToColumn("Country");
         }
     }
 }

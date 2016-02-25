@@ -138,11 +138,14 @@
     <Compile Include="App_Start\RouteConfig.cs" />
     <Compile Include="Controllers\CompaniesController.cs" />
     <Compile Include="Controllers\HomeController.cs" />
+    <Compile Include="Controllers\NewsController.cs" />
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
     <Compile Include="Models\CompaniesListViewModel.cs" />
     <Compile Include="Models\CompanyViewModel.cs" />
+    <Compile Include="Models\NewsItemViewModel.cs" />
+    <Compile Include="Models\NewsListViewModel.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
@@ -181,6 +184,8 @@
     <Content Include="Views\Companies\View.cshtml" />
     <Content Include="Views\Home\Index.cshtml" />
     <Content Include="Views\Companies\Index.cshtml" />
+    <Content Include="Views\News\Latest.cshtml" />
+    <Content Include="Views\News\View.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />

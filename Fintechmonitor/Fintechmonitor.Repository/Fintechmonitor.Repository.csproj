@@ -55,8 +55,11 @@
   <ItemGroup>
     <Compile Include="CompanyRepository.cs" />
     <Compile Include="ICompanyRepository.cs" />
+    <Compile Include="INewsRepository.cs" />
     <Compile Include="Mapping\DapperBootstrapper.cs" />
     <Compile Include="Mapping\CompanyMap.cs" />
+    <Compile Include="Mapping\NewsMap.cs" />
+    <Compile Include="NewsRepository.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>

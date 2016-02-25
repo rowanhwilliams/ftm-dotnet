@@ -1,5 +1,5 @@
 ﻿@{
-    ViewBag.Title = "Home Page";
+    ViewBag.Title = "FintechMonitor - Home";
 }
 
 <div class="jumbotron">
@@ -14,12 +14,12 @@
         <p>
             Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras ac efficitur ligula, et facilisis massa. Proin porttitor, lectus sed viverra dapibus, nibh sapien mattis neque, ac rhoncus lacus quam sit amet urna. Vivamus vel aliquam dui. Ut condimentum sodales ultricies. Sed eget mauris convallis arcu condimentum ultrices vel a felis. Duis quis laoreet elit. Sed ut augue maximus, pulvinar mauris luctus, tempor orci. Aliquam id consequat metus.
         </p>
-        <p><a class="btn btn-default" href="/">Learn more &raquo;</a></p>
+        <p><a class="btn btn-default" href="@Url.Action("Latest", "News")">Latest news &raquo;</a></p>
     </div>
     <div class="col-md-4">
         <h2>Companies</h2>
         <p>Etiam fermentum turpis non metus vehicula convallis. Vivamus a nibh et ligula fringilla eleifend ac eu quam. Etiam ullamcorper consequat turpis in mollis. Sed et erat nec nunc ornare consectetur quis eu metus. Fusce sit amet pretium enim. Donec sit amet placerat ipsum.</p>
-        <p><a class="btn btn-default" href="@Url.Action("Index", "Companies")">Learn more &raquo;</a></p>
+        <p><a class="btn btn-default" href="@Url.Action("Index", "Companies")">Show companies &raquo;</a></p>
     </div>
     <div class="col-md-4">
         <h2>Jobs</h2>

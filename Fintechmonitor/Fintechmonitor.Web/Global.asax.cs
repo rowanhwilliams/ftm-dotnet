@@ -61,6 +61,9 @@ namespace Fintechmonitor.Web
 
             builder.RegisterType<CompanyService>().AsImplementedInterfaces();
             builder.RegisterType<CompanyRepository>().AsImplementedInterfaces();
+
+            builder.RegisterType<NewsService>().AsImplementedInterfaces();
+            builder.RegisterType<NewsRepository>().AsImplementedInterfaces();
         }
     }
 }

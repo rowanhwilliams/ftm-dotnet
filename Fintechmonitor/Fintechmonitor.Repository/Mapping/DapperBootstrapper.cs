@@ -9,6 +9,7 @@ namespace Fintechmonitor.Repository.Mapping
             FluentMapper.Initialize(config =>
             {
                 config.AddMap(new CompanyMap());
+                config.AddMap(new NewsMap());
             });
         }
     }

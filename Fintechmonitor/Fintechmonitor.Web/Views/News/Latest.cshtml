@@ -1,0 +1,16 @@
+﻿@model Fintechmonitor.Web.Models.NewsListViewModel
+@{
+    ViewBag.Title = "Latest News - FintechMonitor";
+}
+
+<h1>Latest News</h1>
+
+
+    @foreach (var newsItem in Model.List)
+    {
+        <dl class="dl-horizontal">
+            <dt>@newsItem.DateTime.ToLongDateString()</dt>
+            <dd>@Html.ActionLink(@newsItem.Headline, "View", new { id = newsItem.Id })</dd>
+        </dl>
+    }
+
