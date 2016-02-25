@@ -9,7 +9,7 @@
     @foreach (var newsItem in Model.List)
     {
         <dl class="dl-horizontal">
-            <dt>@newsItem.DateTime.ToLongDateString()</dt>
+            <dt>@newsItem.DateTime.ToShortDateString()</dt>
             <dd>@Html.ActionLink(@newsItem.Headline, "View", new { id = newsItem.Id })</dd>
         </dl>
     }
