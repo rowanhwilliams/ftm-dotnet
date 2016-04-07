@@ -146,7 +146,7 @@ Automation/testDeploy.ps1
 Automation/Local-Test-User-Data-Modules.ps1
 Package.rar
 Website/Plugins/PluginsBuildOutput/
-*.map
+#*.map
 LocalPublish/
 Automation/admin.magsonline.local.bat
 Automation/magsonline.local.bat
