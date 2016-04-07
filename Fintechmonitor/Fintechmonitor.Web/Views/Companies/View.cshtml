@@ -3,7 +3,11 @@
     ViewBag.Title = Model.Name;
 }
 
-<h2>@Model.Name</h2>
-<h4>Headquarters: @Model.City, @Model.Country</h3>
-<br/>
-<p>@Model.AboutUs</p>
+<div class="panel-heading">
+    <h4 class="panel-title">@Model.Name</h4>
+</div>
+<div class="panel-body">
+    <h3>Headquarters: @Model.City, @Model.Country</h3>
+    <br />
+    <p>@Model.AboutUs</p>
+</div>

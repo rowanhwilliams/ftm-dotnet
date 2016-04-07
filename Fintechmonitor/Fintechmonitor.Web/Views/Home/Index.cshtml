@@ -2,28 +2,13 @@
     ViewBag.Title = "FintechMonitor - Home";
 }
 
-<div class="jumbotron">
-    <h1>FintechMonitor</h1>
-    <p class="lead">Neque porro quisquam est qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit...</p>
-    <p><a href="/" class="btn btn-primary btn-lg">Learn more &raquo;</a></p>
+<div class="panel-heading">
+    <h4 class="panel-title">FintechMonitor</h4>
 </div>
+<div class="panel-body">
+    <p>Click on a link below:</p>
 
-<div class="row">
-    <div class="col-md-4">
-        <h2>News</h2>
-        <p>
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras ac efficitur ligula, et facilisis massa. Proin porttitor, lectus sed viverra dapibus, nibh sapien mattis neque, ac rhoncus lacus quam sit amet urna. Vivamus vel aliquam dui. Ut condimentum sodales ultricies. Sed eget mauris convallis arcu condimentum ultrices vel a felis. Duis quis laoreet elit. Sed ut augue maximus, pulvinar mauris luctus, tempor orci. Aliquam id consequat metus.
-        </p>
-        <p><a class="btn btn-default" href="@Url.Action("Latest", "News")">Latest news &raquo;</a></p>
-    </div>
-    <div class="col-md-4">
-        <h2>Companies</h2>
-        <p>Etiam fermentum turpis non metus vehicula convallis. Vivamus a nibh et ligula fringilla eleifend ac eu quam. Etiam ullamcorper consequat turpis in mollis. Sed et erat nec nunc ornare consectetur quis eu metus. Fusce sit amet pretium enim. Donec sit amet placerat ipsum.</p>
-        <p><a class="btn btn-default" href="@Url.Action("Index", "Companies")">Show companies &raquo;</a></p>
-    </div>
-    <div class="col-md-4">
-        <h2>Jobs</h2>
-        <p>Sed eget mauris convallis arcu condimentum ultrices vel a felis. Duis quis laoreet elit. Sed ut augue maximus, pulvinar mauris luctus, tempor orci. Aliquam id consequat metus. Etiam fermentum turpis non metus vehicula convallis. Vivamus a nibh et ligula fringilla eleifend ac eu quam.</p>
-        <p><a class="btn btn-default" href="/">Learn more &raquo;</a></p>
-    </div>
+    <p>@Html.ActionLink("Latest News", "Latest", "News")</p>
+
+    <p>@Html.ActionLink("Companies", "Index", "Companies")</p>
 </div>

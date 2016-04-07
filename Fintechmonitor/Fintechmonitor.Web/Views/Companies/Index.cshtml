@@ -3,12 +3,17 @@
     ViewBag.Title = "Companies - FintechMonitor";
 }
 
-<h1>Companies</h1>
+<div class="panel-heading">
+    <h3 class="panel-title">Companies</h3>
+</div>
+<div class="panel-body">
+    @foreach (var company in Model.List)
+    {
+        var display = $"{company.Name} {company.City}, {company.City}";
+        <p>@Html.ActionLink(display, "View", new { id = company.Id })</p>
+    }    
+</div>
 
-<table class="table">
-@foreach(var company in Model.List)
-{
-    var display = $"{company.Name} {company.City}, {company.City}";
-    <p>@Html.ActionLink(display, "View", new { id = company.Id })</p>
-}
+
+
 
