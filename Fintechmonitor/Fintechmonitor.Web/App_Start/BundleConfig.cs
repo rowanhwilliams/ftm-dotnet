@@ -18,7 +18,6 @@ namespace Fintechmonitor.Web
             var headStyles = new StyleBundle("~/bundles/css").Include
             (
                 "~/libs/bootstrap/css/bootstrap.min.css",
-                "~/libs/font-awesome/css/font-awesome.min.css",
                 "~/libs/jquery.scrollbar/jquery.scrollbar.css",
                 "~/libs/ionrangeslider/css/ion.rangeSlider.css",
                 "~/libs/ionrangeslider/css/ion.rangeSlider.skinFlat.css",
@@ -33,7 +32,13 @@ namespace Fintechmonitor.Web
                 "~/css/demo.css"
             );
 
+            var fontawesomeStyles = new StyleBundle("~/libs/font-awesome/css/font-awesome").Include
+            (
+                "~/libs/font-awesome/css/font-awesome.css"
+            );
+
             bundles.Add(headStyles);
+            bundles.Add(fontawesomeStyles);
         }
 
         private static void RegisterScriptBundles(BundleCollection bundles)
