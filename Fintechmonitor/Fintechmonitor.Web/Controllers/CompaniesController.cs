@@ -44,7 +44,7 @@ namespace Fintechmonitor.Web.Controllers
                 City = company.City,
                 Country = company.Country,
                 EmployeeSize = company.EmployeeSize,
-                PrincipalProducts = company.PrincipalProducts.Select(ToPrincipalProductViewModel).ToArray()
+                PrincipalProducts = company.PrincipalProducts?.Select(ToPrincipalProductViewModel).ToArray()
             };
         }
 
