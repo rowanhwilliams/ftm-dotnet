@@ -10,6 +10,7 @@ namespace Fintechmonitor.Repository.Mapping
             {
                 config.AddMap(new CompanyMap());
                 config.AddMap(new NewsMap());
+                config.AddMap(new PrincipalProductMap());
             });
         }
     }

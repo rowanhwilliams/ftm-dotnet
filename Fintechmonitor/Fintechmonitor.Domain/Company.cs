@@ -13,5 +13,8 @@ namespace Fintechmonitor.Domain
         public string City { get; set; }
         public string Country { get; set; }
         public string AboutUs { get; set; }
+        public string EmployeeSize { get; set; }
+
+        public PrincipalProduct[] PrincipalProducts { get; set; }
     }
 }

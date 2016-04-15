@@ -146,6 +146,7 @@
     <Compile Include="Models\CompanyViewModel.cs" />
     <Compile Include="Models\NewsItemViewModel.cs" />
     <Compile Include="Models\NewsListViewModel.cs" />
+    <Compile Include="Models\PrincipalProductViewModel.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>

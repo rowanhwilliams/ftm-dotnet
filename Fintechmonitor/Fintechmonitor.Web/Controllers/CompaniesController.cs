@@ -24,7 +24,7 @@ namespace Fintechmonitor.Web.Controllers
             return View(viewModel);
         }
 
-        [OutputCache(Duration = 12000, VaryByParam = "id")]
+        //[OutputCache(Duration = 12000, VaryByParam = "id")]
         public ActionResult View(int? id)
         {
             if (!id.HasValue) return View(CompanyViewModel.Empty());
@@ -43,6 +43,18 @@ namespace Fintechmonitor.Web.Controllers
                 AboutUs = company.AboutUs,
                 City = company.City,
                 Country = company.Country,
+                EmployeeSize = company.EmployeeSize,
+                PrincipalProducts = company.PrincipalProducts.Select(ToPrincipalProductViewModel).ToArray()
+            };
+        }
+
+        private PrincipalProductViewModel ToPrincipalProductViewModel(PrincipalProduct principalProduct)
+        {
+            return new PrincipalProductViewModel
+            {
+                Id = principalProduct.Id,
+                Title = principalProduct.Title,
+                FirstLaunched = principalProduct.FirstLaunched
             };
         }
 

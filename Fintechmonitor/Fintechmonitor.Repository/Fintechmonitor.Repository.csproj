@@ -59,6 +59,7 @@
     <Compile Include="Mapping\DapperBootstrapper.cs" />
     <Compile Include="Mapping\CompanyMap.cs" />
     <Compile Include="Mapping\NewsMap.cs" />
+    <Compile Include="Mapping\PrincipalProductMap.cs" />
     <Compile Include="NewsRepository.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>

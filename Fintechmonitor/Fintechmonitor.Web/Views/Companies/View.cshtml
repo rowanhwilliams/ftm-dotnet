@@ -3,11 +3,50 @@
     ViewBag.Title = Model.Name;
 }
 
-<div class="panel-heading">
-    <h4 class="panel-title">@Model.Name</h4>
-</div>
-<div class="panel-body">
-    <h3>Headquarters: @Model.City, @Model.Country</h3>
-    <br />
-    <p>@Model.AboutUs</p>
+
+@Html.Partial("_RightInfoPane", Model)
+
+<div class="col-lg-9 col-md-9 col-sm-12 col-xs-12">
+    <div class="panel panel-info">
+
+        <div class="panel-heading">
+            <h4 class="panel-title"><li class="fa fa-file-text-o"></li> @Model.Name</h4>
+        </div>
+        <div class="panel-body">
+            <p>@Model.AboutUs</p>
+        </div>
+@if (Model.HasPrincipalProducts())
+{
+        <div class="panel-heading">
+            <h3 class="panel-title">Principal Products</h3>
+        </div>
+        <div class="panel-body">
+            <div class="scrollable scrollbar-macosx">
+                <table id="" class="table table_sortable {sortlist: [[0,0]]}" cellspacing="0" width="100%">
+                    <thead>
+                    <tr>
+                        <th>Product</th>
+                        <th>Released</th>
+                    </tr>
+                    </thead>
+                    <tfoot>
+                    <tr>
+                        <th>Product</th>
+                        <th>Released</th>
+                    </tr>
+                    </tfoot>
+                    <tbody>
+                    @foreach (var principalProduct in Model.PrincipalProducts)
+                    {
+                        <tr>
+                            <td>@principalProduct.Title</td>
+                            <td>@principalProduct.FirstLaunched</td>
+                        </tr>
+                    }
+                    </tbody>
+                </table>
+            </div>
+        </div>
+}
+    </div>
 </div>
