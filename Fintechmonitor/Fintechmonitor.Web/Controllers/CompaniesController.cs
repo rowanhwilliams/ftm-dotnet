@@ -24,7 +24,7 @@ namespace Fintechmonitor.Web.Controllers
             return View(viewModel);
         }
 
-        //[OutputCache(Duration = 12000, VaryByParam = "id")]
+        [OutputCache(Duration = 12000, VaryByParam = "id")]
         public ActionResult View(int? id)
         {
             if (!id.HasValue) return View(CompanyViewModel.Empty());
